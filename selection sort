@@ -1,0 +1,14 @@
+def selection(A):
+    for i in range(len(A)-1):
+        key=i
+        k=i+1
+        while k<len(A):
+            if A[k]<A[key]: key=k
+            k+=1
+        A[i],A[key]=A[key],A[i]
+        #print(A)
+
+
+x=[2,4,5,1,3]
+selection(x)
+print(x)
